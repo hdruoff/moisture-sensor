@@ -5,9 +5,9 @@ let differenz = maximum - minimum
 basic.forever(function () {
     led.enable(true)
     if (true) {
-        x = pins.analogReadPin(AnalogPin.C16) - 736
+        x = pins.analogReadPin(AnalogPin.P1) - 736
         x = x / 100
-        if (x >= 3) {
+        if (x >= 2) {
             basic.setLedColor(0xff0000)
         } else {
             basic.setLedColor(0x00ff00)
